@@ -68,7 +68,7 @@ if images:
     for idx, img in enumerate(images):
         with cols[idx % num_cols]:
             st.subheader(img.replace("_", " ").replace(".png", "").title())
-            st.image(os.path.join(ASSETS_FOLDER, img), use_column_width=True)
+            st.image(os.path.join(ASSETS_FOLDER, img), use_container_width=True)
 else:
     st.info("No images available for the selected view.")
 
